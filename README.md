@@ -18,7 +18,7 @@ I (at least initially) don't intend to support this as a distributable component
 ## Usage
 
 HTML
-```
+```html
 <div class="brick-wall" id="brick-wall">
     <div class="brick">
         <!-- include the width and height attributes to get correct layout before images load -->
@@ -28,7 +28,7 @@ HTML
 ```
 
 CSS
-```
+```css
 .brick-wall {
     display: flex;
 }
@@ -52,7 +52,7 @@ CSS
 ```
 
 JavaScript
-```
+```js
 let brickwall = new BrickWall(document.getElementById("brick-wall")).init();
 ```
 
@@ -60,7 +60,7 @@ let brickwall = new BrickWall(document.getElementById("brick-wall")).init();
 
 The BrickWall constructor takes an optional options object as its 2nd parameter. 
 
-```
+```js
 new BrickWall(wallElement, {
     defaultHeight: 400,
     breakPoints: {
@@ -79,7 +79,7 @@ The events `brick-wall-layout-started` and `brick-wall-layout-completed` are fir
 
 Note - the first layout occurs at the end of `init()`, so register listeners first.
 
-```
+```js
 let brickwall = new BrickWall(wallElement);
 
 brickwall.addEventListener('brick-wall-layout-completed' () => {
