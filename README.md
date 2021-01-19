@@ -13,7 +13,7 @@ An unfortunate consequence of using Flexbox is that there isn't a great way to c
 
 From a performance perspective, I have not captured any real benchmarks but it passes the 'feels fast' test to me.  
 
-I (at least initially) don't intend to support this as a distributable component - it's more a proof of how simple this can be 
+I (at least initially) don't intend to support this as a distributable component - it's more a proof of how simple this can be.
 
 ## Usage
 
