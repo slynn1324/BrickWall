@@ -1,0 +1,20 @@
+.brick-wall {
+    display: flex;
+}
+
+.brick-wall-column {
+    flex: 1;
+    width: 100%;
+}
+
+.brick {
+    margin: 0 5px 10px 5px;
+}
+
+.brick img {    
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    background-color: #ccc;
+}
